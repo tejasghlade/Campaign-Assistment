@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Slyce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Packages
 
-Currently, two official plugins are available:
+1. **React**: A JavaScript library for building user interfaces.
+2. **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+3. **Axios**: A promise-based HTTP client for making requests to the backend API.
+4. **shadcn/ui** : A library of reusable components for building user interfaces.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Backend
 
-- Configure the top-level `parserOptions` property like this:
+The backend of the Slyce application is built using modern technologies to ensure scalability, security, and performance. It handles all the business logic, database interactions, and API endpoints required by the frontend.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+
+## Development
+
+To start the development server, run:
+
+```bash
+npm start
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To build the project for production, run:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run build
 ```
+
+## Port
+
+The frontend development server runs on port `5173` by default. You can access it by navigating to `http://localhost:5173` in your web browser.
+
