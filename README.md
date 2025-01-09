@@ -7,9 +7,11 @@
 3. PostgreSQL [ Database ]
 
 # Loom Video Link
-<iframe src="https://www.loom.com/embed/80ea1cacbacc43dcbf316be8d2451d85?sid=01f94eff-1a7a-489b-95f1-136b6100eecf" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width:100%;height:400px;"></iframe>
 
-link: https://www.loom.com/embed/80ea1cacbacc43dcbf316be8d2451d85?sid=01f94eff-1a7a-489b-95f1-136b6100eecf
+
+<div style="position: relative; padding-bottom: 64.92178098676294%; height: 0;"><iframe src="https://www.loom.com/embed/80ea1cacbacc43dcbf316be8d2451d85?sid=1442c169-fc8c-4384-bb42-8b2956a75d23" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+link: https://www.loom.com/share/80ea1cacbacc43dcbf316be8d2451d85?sid=5c43003f-7655-490e-b3fa-2bf81a20490e
 
 ## Table of Contents
 
