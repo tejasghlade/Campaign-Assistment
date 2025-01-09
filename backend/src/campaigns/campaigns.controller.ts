@@ -6,9 +6,11 @@ import {
   Param,
   Delete,
   Put,
+  ParseIntPipe,
 } from '@nestjs/common';
 import { CampaignsService } from './campaigns.service';
 import { Campaign } from './campaign.entity';
+import { UpdateCampaignDto } from './dto/update-campaign.dto';
 
 @Controller('campaigns')
 export class CampaignsController {
@@ -30,12 +32,15 @@ export class CampaignsController {
   }
 
   @Put(':id')
-  update(@Param('id') id: number, @Body() campaign: Campaign) {
-    return this.campaignsService.update(+id, campaign);
+  update(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() updateCampaignDto: UpdateCampaignDto,
+  ) {
+    return this.campaignsService.update(id, updateCampaignDto);
   }
 
   @Delete(':id')
-  remove(@Param('id') id: number) {
-    return this.campaignsService.remove(+id);
+  remove(@Param('id', ParseIntPipe) id: number) {
+    return this.campaignsService.remove(id);
   }
 }
